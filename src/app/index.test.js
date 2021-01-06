@@ -1,4 +1,4 @@
-const { convertBinaryToDecimal } = require("./index");
+import { convertBinaryToDecimal } from "./index";
 
 describe("Binary to decimal", () => {
   it("should convert correctly", () => {
