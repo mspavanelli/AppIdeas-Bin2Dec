@@ -1,4 +1,4 @@
-export function convertBinaryToDecimal(binaryNumber) {
+export default function convertBinaryToDecimal(binaryNumber) {
   const isEmpty = binaryNumber.length === 0;
   const isString = typeof binaryNumber === "string";
 

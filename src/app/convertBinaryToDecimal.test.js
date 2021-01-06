@@ -1,4 +1,4 @@
-import { convertBinaryToDecimal } from "./index";
+import convertBinaryToDecimal from "./convertBinaryToDecimal";
 
 describe("Binary to decimal", () => {
   it("should convert correctly", () => {

@@ -1,4 +1,4 @@
-import { convertBinaryToDecimal } from "./index.js";
+import convertBinaryToDecimal from "./convertBinaryToDecimal.js";
 
 const Elements = {
   $btnConvert: document.querySelector("#btn-convert"),
