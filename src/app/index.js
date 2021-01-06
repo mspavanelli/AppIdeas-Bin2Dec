@@ -1,4 +1,4 @@
-function convertBinaryToDecimal(binaryNumber) {
+export function convertBinaryToDecimal(binaryNumber) {
   const isEmpty = binaryNumber.length === 0;
   const isString = typeof binaryNumber === "string";
 
@@ -25,5 +25,3 @@ function convertBinaryToDecimal(binaryNumber) {
       return (accumulator += item * Math.pow(2, index));
     }, 0);
 }
-
-module.exports = { convertBinaryToDecimal };
