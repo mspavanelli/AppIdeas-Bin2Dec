@@ -11,7 +11,9 @@ function convertBinaryToDecimal(binaryNumber) {
   }
 
   const containsOnlyZerosAndOnes = binaryNumber.match(/\b[01]+\b/);
-  if (!containsOnlyZerosAndOnes) {
+  const isValidNumber = Number.isInteger(Number(binaryNumber));
+
+  if (!containsOnlyZerosAndOnes || !isValidNumber) {
     throw Error("Binary number must contain only 0s and 1s");
   }
 
