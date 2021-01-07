@@ -37,7 +37,8 @@ App.service = {
 
 App.view = {
   render: () => {
-    Elements.$decimalNumber.innerHTML = App.model.decimalNumber;
+    Elements.$decimalNumber.innerHTML =
+      App.model.decimalNumber?.toString() || "-";
   },
 };
 
