@@ -13,8 +13,5 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Run application
-        run: yarn dev &
-
       - name: Run unit tests
         run: yarn test
