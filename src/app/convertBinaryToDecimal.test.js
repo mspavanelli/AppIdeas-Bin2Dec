@@ -58,5 +58,8 @@ describe("Binary to decimal", () => {
     expect(() => convertBinaryToDecimal("*")).toThrow(
       new Error("Binary number must contain only 0s and 1s")
     );
+    expect(() => convertBinaryToDecimal("%")).toThrow(
+      new Error("Binary number must contain only 0s and 1s")
+    );
   });
 });
