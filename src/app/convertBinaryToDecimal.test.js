@@ -31,6 +31,9 @@ describe("Binary to decimal", () => {
     expect(() => convertBinaryToDecimal("a")).toThrow(
       new Error("Binary number must contain only 0s and 1s")
     );
+    expect(() => convertBinaryToDecimal("1a")).toThrow(
+      new Error("Binary number must contain only 0s and 1s")
+    );
     expect(() => convertBinaryToDecimal("01b")).toThrow(
       new Error("Binary number must contain only 0s and 1s")
     );
@@ -41,6 +44,18 @@ describe("Binary to decimal", () => {
       new Error("Binary number must contain only 0s and 1s")
     );
     expect(() => convertBinaryToDecimal("01%91")).toThrow(
+      new Error("Binary number must contain only 0s and 1s")
+    );
+    expect(() => convertBinaryToDecimal("_0")).toThrow(
+      new Error("Binary number must contain only 0s and 1s")
+    );
+    expect(() => convertBinaryToDecimal("[")).toThrow(
+      new Error("Binary number must contain only 0s and 1s")
+    );
+    expect(() => convertBinaryToDecimal("@")).toThrow(
+      new Error("Binary number must contain only 0s and 1s")
+    );
+    expect(() => convertBinaryToDecimal("*")).toThrow(
       new Error("Binary number must contain only 0s and 1s")
     );
   });
