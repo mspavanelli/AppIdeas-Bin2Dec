@@ -8,7 +8,8 @@
     "dev": "parcel src/index.html -p 3000",
     "start": "yarn clean && yarn dev",
     "test:unit": "jest",
-    "test:e2e": "cypress open"
+    "test:e2e": "cypress run",
+    "test:gui": "cypress open"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
