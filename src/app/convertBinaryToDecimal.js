@@ -17,11 +17,5 @@ export default function convertBinaryToDecimal(binaryNumber) {
     throw Error("Binary number must contain only 0s and 1s");
   }
 
-  return binaryNumber
-    .split("")
-    .reverse()
-    .map((digit) => parseInt(digit, 10))
-    .reduce((accumulator, item, index) => {
-      return (accumulator += item * Math.pow(2, index));
-    }, 0);
+  return parseInt(binaryNumber, 2);
 }
