@@ -17,6 +17,7 @@ const App = {
     });
     Elements.$binaryNumber.addEventListener("keyup", function (event) {
       App.service.updateBinaryNumber(this.value);
+      App.controller.applyRule(this.value);
     });
   },
 };
@@ -48,6 +49,18 @@ App.controller = {
     App.service.updateDecimalNumber(decimalValue);
 
     App.view.render();
+  },
+  applyRule: (value) => {
+    const hasOnlyZerosAndOnes = Boolean(value.match(/\b[01]+\b/)?.length);
+    const isEmpty = value === "";
+
+    const isValidBinaryNumber = hasOnlyZerosAndOnes || isEmpty;
+
+    if (!isValidBinaryNumber) {
+      Elements.$binaryNumber.classList.add("text-red-400", "border-red-400");
+    } else {
+      Elements.$binaryNumber.classList.remove("text-red-400", "border-red-400");
+    }
   },
 };
 
