@@ -2,38 +2,38 @@
 
 Binary to Decimal inspired by App [Bin2DecApp](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md)
 
-## 🚀 Desenvolvendo
+## 🚀 Developing
 
 ```sh
 yarn
 yarn dev
 ```
 
-Abra o servidor em: `http://locahost:3000`
+Open server in: `http://locahost:3000`
 
-## 🔧 Executando os testes
+## 🔧 Run tests
 
-### Testes de unidade
+### Unit tests
 
 ```sh
 yarn test:unit
 ```
 
-#### Modo de Observação
+#### Watch Mode
 
 ```sh
 yarn test:unit:watch
 ```
 
-### Testes de Interface (E2E)
+### End-to-end (interface) (E2E)
 
-#### Execução em segundo plano
+#### Run in background
 
 ```sh
 yarn test:e2e
 ```
 
-#### Execução com tela gráfica
+#### Run in graphic mode
 
 ```sh
 yarn test:gui
