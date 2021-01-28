@@ -22,5 +22,10 @@
     "cypress": "^6.2.1",
     "jest": "^26.6.3",
     "parcel": "^2.0.0-beta.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
   }
 }
