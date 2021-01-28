@@ -5,6 +5,7 @@
   "scripts": {
     "clean": "rm -rf .parcel-cache dist",
     "build": "parcel build src/index.html",
+    "build:css": "tailwind build ./src/styles/tailwind.css -o ./src/styles.css",
     "dev": "parcel src/index.html -p 3000",
     "start": "yarn clean && yarn dev",
     "test:unit": "jest",
